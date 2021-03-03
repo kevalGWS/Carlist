@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAR stock LIST</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+
+</head>
+<body>
+    <div class="container my-5">
+        <h1 class="display-4 text-center"> <img src="/iconmonstr-car-3.svg" alt=""> My <span class="text-primary">CAR</span> collection</h1>
+    <form id="car-form">
+        <div class="form-group">
+            <label for="make">Make</label>
+            <input type="text" id="make" class="form-control" placeholder="Enter Car brand">
+        </div>
+        <div class="form-group">
+            <label for="model">Model</label>
+            <input type="text" id="model" class="form-control" placeholder="Enter Car model">
+        </div>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="text" id="price" class="form-control" placeholder="Enter Car Price">
+        </div>
+        <button type="submit" class="btn btn-danger btn-block">Add car</button>
+        
+    </form>
+    <table class="table table-hover table-warning mt-5">
+        <thead>
+            <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Price</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="car-list"></tbody>
+
+    </table>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
